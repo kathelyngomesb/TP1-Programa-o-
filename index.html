@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+  function somar(){
+    let num1 = Number (document.getElementById ("num1").value);
+    let num2 = Number (document.getElementById("num2").value);
+    let soma = num1 + num2;
+    document.getElementById("resultado").innerText = "resultado: " + soma;
+  }
+  function subtrair(){
+    let num1 = Number (document.getElementById ("num1").value);
+    let num2 = Number (document.getElementById("num2").value);
+    let subtracao = num1 - num2;
+    document.getElementById("resultado").innerText = "resultado: " + subtracao;
+  }
+  function multiplicar(){
+    let num1 = Number (document.getElementById ("num1").value);
+    let num2 = Number (document.getElementById("num2").value);
+    let multiplicacao = num1 * num2;
+    document.getElementById("resultado").innerText = "resultado: " + multiplicacao;
+  }
+  function dividir(){
+    let num1 = Number (document.getElementById ("num1").value);
+    let num2 = Number (document.getElementById("num2").value);
+    let divisao = num1 / num2;
+    document.getElementById("resultado").innerText = "resultado: " + divisao;
+  }
+</script>
+<body>
+    <h1>calculadora</h1>
+  <input id="num1">
+  <input id="num2"> 
+  
+  <br>
+
+  <button onclick="somar()">+</button>
+  <button onclick="subtrair()">-</button>
+  <button onclick="multiplicar()">*</button>
+  <button onclick="dividir()">/</button>
+
+  <h2 id="resultado">resultado</h2>                 
+
+  
+</body>
+</html>
